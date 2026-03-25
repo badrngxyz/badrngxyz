@@ -1,0 +1,7 @@
+[tools]
+deno = "2.7.7"
+
+[tasks.record]
+run="""
+git commit -m "$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+"""
