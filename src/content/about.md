@@ -6,10 +6,11 @@ description: Who's writing this nonsense? What's this all about?
 image: ../assets/blog-placeholder-about.jpg
 ---
 
-The blog name isn't coincidential 😅 I'm an unlucky chaotic person trying everything that interests me. As long as it keeps me entertained, it'll be tried for a while, from wittling to mountain biking. However, I'm cursed with an almost crippling perfectionism, which prevents me from sharing anything that isn't logically perfect and can't be bent.
+The blog's name isn't coincidental 😅 I'm an unlucky, chaotic person who enjoys exploring diverse interests, from whittling to skydiving. As long as it entertains me, I'll try it for a while, from whittling to sky diving. However, I struggle with a near-crippling perfectionism that prevents me from sharing anything that isn't logically flawless and airtight.
 
-Here I'll try to share more, because there's no logically perfect thing, there's no absolute right in the human space, so I'm trying to unchain myself. Navigating life is an amazing experience, and here will be the space for tracking how I'm wandering through it.
+Here, I'm challenging myself to share more, recognizing that logical perfection is unattainable and there's no absolute right or wrong in the human experience. Navigating life is an incredible journey, and this blog will document my personal wanderings.
 
-I'm also a software developer, and I'm propelled by curiosity/chaos to try everything. In the end, it provides different perspectives, letting me borrow concepts from all around while trying to make beautiful software. The craft is what keeps me engaged: tweaking architecture, idioms, flows, simplicity, ... anything that gives that good feeling of satisfaction at the end.
+I'm also a software developer driven by curiosity and a touch of chaos to experiment with everything. This approach ultimately provides diverse perspectives, allowing me to borrow concepts from various fields to create elegant software. The craft itself keeps me engaged: tweaking architecture, idioms, flows, simplicity, ... anything that delivers that satisfying sense of accomplishment.
 
-The words come from a Brazilian, but they're in English to help me practice and reach a wider audience. Therefore, mistakes are bound to show up eventually, and posts won't be liked by everyone. But I keep the door open for constructive feedback. You can always [reach out on GitHub and open an issue](https://github.com/badrngxyz/badrngxyz).
+Although I'm Brazilian, I write in English to practice and connect with a broader audience. As a result, errors are inevitable, and not every post will resonate with everyone. However, I welcome constructive feedback and encourage you to reach out on GitHub by opening an issue.
+
