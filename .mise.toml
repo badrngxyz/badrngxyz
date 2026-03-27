@@ -1,5 +1,6 @@
 [tools]
-deno = "2.7.7"
+pnpm = "10.33.0"
+node = "24.14.1"
 
 [tasks.record]
 run="""
