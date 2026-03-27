@@ -16,15 +16,13 @@ That's a dream for my perfectionist brain: focus on progress over perfection. Th
 
 # Bad
 
-Quality is relative to the appraiser. That's not to say I won't focus on good writing; it's to focus on it getting out the door before no mistake can be found. It's about having no standard set in stone.
+Quality is relative to the appraiser. Instead of trying to appeal to everyone and never releasing out of fear of others not liking it, I'll focus on doing the best I can with the knowledge I have. It's to focus on getting it out the door before making sure absolutely no mistakes can be found. Done is better than perfect!
 
-Before anything, I want to produce for myself, to document learnings in hopes of it being useful for someone, and, by the end, improve it by continuously revisiting.
-
-It's only bad if you let it be, but it'll never be good if you don't start. Therefore, I may mess up, but I'll accept feedback to improve it.
+Before anything, I want to produce for myself, to document learnings in hopes of it being useful for someone, and, by the end, improve it by continuously revisiting. It's only bad if you let it be, but it'll never be good if you don't start. Therefore, I may mess up, but I'll accept feedback to improve it.
 
 # Random
 
-Creativity blossoms with diversity, so why should I limit myself to a single subject? I'm a software developer, and even if I were to limit myself to the craft, there's still a plethora of environments in it. However, it's by incorporating other disciplines that I can drive the best analogies.
+Creativity blossoms with diversity, so why should I limit myself to a single subject? I'm a software developer, and even if I were to limit myself to the craft, there's still a plethora of environments in it. However, it's by incorporating other disciplines that I can derive the best analogies.
 
 Drawing inspiration from nature, or anything that goes through evolution, creates shortcuts to validate an idea. Battle testing it for years prunes what's unnecessary, so drawing parallels allows for borrowing that extensive testing.
 
