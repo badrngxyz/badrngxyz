@@ -1,8 +1,2 @@
 [tools]
-pnpm = "10.33.0"
-node = "24.14.1"
-
-[tasks.record]
-run="""
-git commit -m "$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-"""
+deno = "2.7.9"

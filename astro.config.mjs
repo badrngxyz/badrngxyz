@@ -11,6 +11,6 @@ export default defineConfig({
   site: "https://badrng.xyz",
   integrations: [mdx(), sitemap()],
   adapter: cloudflare({
-    imageService: { build: 'compile', runtime: 'cloudflare-binding' }
+    imageService: { build: "compile", runtime: "cloudflare-binding" },
   }),
 });

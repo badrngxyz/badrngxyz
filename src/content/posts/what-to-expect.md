@@ -1,12 +1,10 @@
 ---
+hash: CfXANB
+date: 2026-03-25
 title: What to Expect?
 description: Getting out the perfectionism hook
-hash: 3VBxjV
-pubDate: Mar 25 2026
-heroImage: ../../assets/blog-placeholder-5.jpg
+image: ../../assets/blog-placeholder-about.jpg
 ---
-
-A perfectionist starting a blog. Hopefully not too bad, just random progress.
 
 # Nothing
 
