@@ -6,7 +6,7 @@ description: Who's writing this nonsense? What's this all about?
 image: ../assets/blog-placeholder-about.jpg
 ---
 
-The blog's name isn't coincidental 😅 I'm an unlucky, chaotic person who enjoys exploring diverse interests, from whittling to skydiving. As long as it entertains me, I'll try it for a while, from whittling to sky diving. However, I struggle with a near-crippling perfectionism that prevents me from sharing anything that isn't logically flawless and airtight.
+The blog's name isn't coincidental 😅 I'm an unlucky, chaotic person who explores diverse activities, from whittling to skydiving. However, I struggle with a near-crippling perfectionism that prevents me from sharing anything that isn't logically flawless and airtight.
 
 Here, I'm challenging myself to share more, recognizing that logical perfection is unattainable and there's no absolute right or wrong in the human experience. Navigating life is an incredible journey, and this blog will document my personal wanderings.
 
