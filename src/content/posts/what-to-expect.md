@@ -8,34 +8,35 @@ image: ../../assets/blog-placeholder-about.jpg
 
 # Nothing
 
-Even if I said to expect "mistakes", that would still be an expectation. And if there's an expectation of knowingly messing up, then it won't fly 😅
+I considered saying "mistakes," but that sets an expectation. And if I expect to knowingly mess up, it won't work. 😅
 
-If happiness is expectations minus reality, won't it be higher if I reduce expectations while contributing to a better reality? Expectations and things to look forward to are different; one brings pressure, while the other can be called hope. Therefore, I hope to create, to share, to learn, to act towards what I dream without making me feel bad when the real world throws a curve ball.
+If happiness equals reality minus expectations, wouldn't lowering expectations while simultaneously improving reality increase happiness? Expectations differ from anticipation: one creates pressure, while the other fosters eagerness. Therefore, I hope to create, share, learn, and act on my dreams without feeling discouraged when reality throws a curveball.
 
-That's a dream for my perfectionist brain: focus on progress over perfection. The latter leaves you stuck, while the former puts you in motion. Howeeeever... there's always a barrier we have to surpass 🥲 I'd like to say that the fear of not doing surpassed the fear of messing up, but that's only a portion of it. Funnily enough, what kick-started it all was the fact I found the perfect domain 🤣
+That's the ideal for my perfectionist brain: to prioritize progress over perfection. Perfection leads to stagnation, while progress fuels momentum. However, there's always a barrier to overcome. 🥲 I wish I could say the fear of inaction finally outweighed the fear of failure, but that's only partially true. Ironically, finding the perfect domain name kick-started everything! 🤣
 
 # Bad
 
-Quality is relative to the appraiser. Instead of trying to appeal to everyone and never releasing out of fear of others not liking it, I'll focus on doing the best I can with the knowledge I have. It's to focus on getting it out the door before making sure absolutely no mistakes can be found. Done is better than perfect!
+Quality is subjective. Instead of trying to please everyone and delaying release out of fear of criticism, I'll focus on doing my best with my current knowledge. I'll prioritize releasing over achieving absolute flawlessness. Done is better than perfect!
 
-Before anything, I want to produce for myself, to document learnings in hopes of it being useful for someone, and, by the end, improve it by continuously revisiting. It's only bad if you let it be, but it'll never be good if you don't start. Therefore, I may mess up, but I'll accept feedback to improve it.
+Above all, I want to create for myself, document my learning journey for the benefit of potential readers, and continuously improve through revisions. It's only "bad" if I allow it to be, and it can never be "good" if I don't start. Therefore, I may make mistakes, but I'll embrace feedback to improve.
 
 # Random
 
-Creativity blossoms with diversity, so why should I limit myself to a single subject? I'm a software developer, and even if I were to limit myself to the craft, there's still a plethora of environments in it. However, it's by incorporating other disciplines that I can derive the best analogies.
+Creativity thrives on diversity, so why limit myself to a single subject? I'm a software developer, and even within that field, there's a vast range of specializations. However, incorporating other disciplines allows me to draw richer analogies.
 
-Drawing inspiration from nature, or anything that goes through evolution, creates shortcuts to validate an idea. Battle testing it for years prunes what's unnecessary, so drawing parallels allows for borrowing that extensive testing.
+Drawing inspiration from nature, or anything that undergoes evolution, offers shortcuts to validating ideas. Years of testing prune away unnecessary elements, so drawing parallels allows me to leverage that extensive process.
 
-Therefore, the more I can tinker, the more I learn about anything, the bigger my exposure to useful insights. That's not to say I'll talk nonsense about everything, but to not cage myself into a single subject and feel shut down from other interests. If I do anything interesting and can ramble about it, it'll eventually end up here 🫣
+Therefore, the more I tinker and learn across different areas, the greater my exposure to useful insights. I won't claim expertise in anything, but I want to avoid confining myself to a single subject and stifling other interests. If I do anything interesting and can ramble about it, it'll likely end up here. 🫣
 
 # Progress
 
-I don't know where I'm going, but does that mean there can't be progress in the journey? If I improve 0.1% in whatever direction, can't that be called progress? It might take years to get to a useful point, but progress for me has never been about knowing the future. It's by looking at the past that I get a chance to see how far I've got. And to distance yourself from said past, you gotta first move!
+I don't know where I'm going, but does that mean there can't be progress along the way? If I improve by 0.1% in any direction, isn't that progress? It might take years to reach a significant milestone, but for me, progress has never been about predicting the future. It's by reflecting on the past that I can see how far I've come. And to distance myself from the past, I must first move!
 
-That's the beauty of xyz, letters usually describing variables we can tweak. I don't know the equation they're in yet, but I hope to figure it out while I play with them. It's in the uncertainty that lies discovery, so trying out while being open to changing course awards me a bigger chance of progress than figuring out what's a straight line.
+That's the beauty of xyz: letters often representing variables we can adjust. I don't yet know the equation they belong to, but I hope to discover it while experimenting with them. It's in uncertainty that discovery lies, so trying things out while remaining open to changing course provides a greater chance of progress than simply aiming for a straight line.
 
 # badrng.xyz
 
-It'll be the combination of it all: no starting point but a void, navigating however I know best, in the direction that feels right, slowly contributing to overall progress.
+It will be a combination of everything: no starting point but a void, navigating as best I can, heading in the direction that feels right, slowly contributing to overall progress.
 
-The best way I can hope to achieve any of it is by showing up and being ready for the punches. There'll be mistakes, but it's with feedback that I can only move forward, so I'm blasting the doors open with this. Just don't expect anything 🫥
+The best way I can hope to achieve any of this is by showing up and being ready for challenges. There will be mistakes, but I can only move forward with feedback, so I'm throwing the doors wide open with this. Just don't expect too much. 🫥
+
