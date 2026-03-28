@@ -2,9 +2,6 @@
   "name": "blog",
   "type": "module",
   "version": "0.0.1",
-  "engines": {
-    "deno": ">=2.7.9"
-  },
   "scripts": {
     "record": "git commit -m \"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\"",
     "format": "prettier -w .",
