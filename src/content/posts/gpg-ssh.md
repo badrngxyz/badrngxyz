@@ -94,15 +94,20 @@ gpg --export-ssh-key $KEYID > ~/.ssh/keys/badrngxyz.pub
 
 cat <<EOT >> ~/.ssh/config
 
-Host github.com
+Host github.com#badrngxyz
     HostName github.com
-    User badrngxyz
     IdentityFile ~/.ssh/keys/badrngxyz.pub
     IdentitiesOnly yes
 EOT
 ```
 
-That's it! The additional GPG key is ready for SSH use!
+That's it! The additional GPG key is ready for SSH use! But you'll need to remember to use the specific host for it to be picked up. To automate it on git, you could configure an URL replacement with:
+
+```
+# ~/.gitconfig
+[url "git@github.com#badrngxyz:badrngxyz"]
+    insteadOf = git@github.com:badrngxyz
+```
 
 ## References
 
@@ -110,3 +115,4 @@ I couldn't have written half of this if it weren't for those that suffered befor
 
 - [Use GPG for SSH keys](https://goral.net.pl/post/use-gpg-for-ssh-keys/)
 - [Now that `sshcontrol` has been deprecated, how to use gpg key for ssh authentication with an agent?](https://security.stackexchange.com/questions/276688/now-that-sshcontrol-has-been-deprecated-how-to-use-gpg-key-for-ssh-authentica)
+- [How to match SSH config based on URL path or SSH arguments (for github deploy keys)?](https://stackoverflow.com/questions/60683677/how-to-match-ssh-config-based-on-url-path-or-ssh-arguments-for-github-deploy-ke)
