@@ -4,10 +4,9 @@ import { z } from "astro/zod";
 
 const page = ({ image }) =>
   z.object({
-    hash: z.string(),
     date: z.coerce.date(),
     title: z.string(),
-    description: z.string(),
+    description: z.string().optional(),
     image: z.optional(image()),
   });
 

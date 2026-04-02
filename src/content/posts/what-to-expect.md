@@ -1,5 +1,4 @@
 ---
-hash: CfXANB
 date: 2026-03-25
 title: What to Expect?
 description: A dream about getting out the perfectionism hook

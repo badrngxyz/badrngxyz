@@ -1,5 +1,4 @@
 ---
-hash: 9nA3Kq
 date: 2026-03-27
 title: Unlucky Wanderer
 description: Who's writing this nonsense? What's this all about?
