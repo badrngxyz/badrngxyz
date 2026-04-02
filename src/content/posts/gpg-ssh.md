@@ -5,9 +5,9 @@ title: How to add a key for SSH to GPG Agent?
 
 The first time was difficult enough, the second a little bit easier, and now it's the third time I have had enough of this! Also, I kind of forgot most of things already because it's been a long since time since the last one 😅
 
-Though I understand that [I could just search](https://www.youtube.com/watch?v=KlniB27j4Yg) for these kinds of things (as I'm doing right now), the information is scattered through forums and guides. Therefore, since it became frequent enough, and it's always a pain, I'm finally creating my own guide. PS: if this guides doesn't work for you, and you need to search, I wish you the best of luck!
+Though I understand that [I could just search](https://www.youtube.com/watch?v=KlniB27j4Yg) for these kinds of things (as I'm doing right now), it became a problem because I'm tired of searching for the information. Therefore, since it's a frequent pain, I'm finally creating my own guide. Why is it frequent for me? I don't know, and that's beside the point 😒
 
-The main assumption is that you're using the GPG Agent for SSH authentication, maybe backed by [YubiKey](https://www.yubico.com/), and you want to include another key for SSH use. There are two ways of doing it, with a simple SSH key, or with another GPG key.
+Before proceeding, I assume a working GPG Agent for SSH authentication, maybe backed by [YubiKey](https://www.yubico.com/), and that you want to include another key for SSH use. I won't go over the agent setup, only on how to add the key: with a simple SSH key, or with another GPG key.
 
 # The ~wrong~ easy way: plain SSH key in GPG Agent
 
@@ -27,10 +27,6 @@ Before continuing, you'll need to remove the previous key. Unfortunately, a norm
 # ....
 # flags.   Prepend the keygrip with an '!' mark to disable it.
 
-# Ed25519 key added on: 2025-06-19 10:05:37
-# Fingerprints:  MD5:...
-#                SHA256:...
-... 0
 # Ed25519 key added on: 2026-03-26 21:53:42
 # Fingerprints:  MD5:...
 #                SHA256:...
