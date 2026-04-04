@@ -79,32 +79,6 @@ By configuring a proper GPG authentication key under a master key, you get to al
 
 And to top it all, you can remove it by simply removing it from your agent with `gpg --delete-keys --delete-secret-keys $KEYID` 🎉
 
-# Handling multiple keys
-
-If you have multiple keys, you'll need to let the GnuPG Agent knows which one to use by configuring it on `~/.ssh/config`
-
-```
-# Export the SSH pubkey to identify on the config
-mkdir ~/.ssh/keys
-gpg --export-ssh-key $KEYID > ~/.ssh/keys/badrngxyz.pub
-
-cat <<EOT >> ~/.ssh/config
-
-Host github.com#badrngxyz
-    HostName github.com
-    IdentityFile ~/.ssh/keys/badrngxyz.pub
-    IdentitiesOnly yes
-EOT
-```
-
-That's it! The additional GPG key is ready for SSH use! But you'll need to remember to use the specific host for it to be picked up. To automate it on git, you could configure an URL replacement with:
-
-```
-# ~/.gitconfig
-[url "git@github.com#badrngxyz:badrngxyz"]
-    insteadOf = git@github.com:badrngxyz
-```
-
 ## References
 
 I couldn't have written half of this if it weren't for those that suffered before 🙃. Here are my sources: 
