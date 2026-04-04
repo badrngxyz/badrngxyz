@@ -1,4 +1,5 @@
 ---
+draft: true
 date: 2026-04-01
 title: How to add a key for SSH to GPG Agent?
 ---
@@ -73,7 +74,6 @@ gpg-connect-agent 'keyattr <auth keygrip> Use-for-ssh: true' /bye
 # Grab the SSH pubkey to put on servers
 gpg --export-ssh-key $KEYID
 ```
-
 
 By configuring a proper GPG authentication key under a master key, you get to also create signing keys under it for signing your commits! But that's left as an exercise for the reader 😅 
 

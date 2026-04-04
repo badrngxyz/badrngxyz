@@ -2,12 +2,12 @@ import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
-const page = ({ image }) =>
+const page = () =>
   z.object({
+    draft: z.boolean().default(false),
     date: z.coerce.date(),
     title: z.string(),
     description: z.string().optional(),
-    image: z.optional(image()),
   });
 
 const posts = defineCollection({

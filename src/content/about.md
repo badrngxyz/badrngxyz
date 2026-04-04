@@ -2,7 +2,6 @@
 date: 2026-03-27
 title: Unlucky Wanderer
 description: Who's writing this nonsense? What's this all about?
-image: ../assets/blog-placeholder-about.jpg
 ---
 
 The blog's name is no accident. 😅 I consider myself an unlucky person who tries to explore diverse activities, from whittling to skydiving. However, I struggle with a near-crippling perfectionism that prevents me from sharing anything that isn't logically flawless and airtight.
