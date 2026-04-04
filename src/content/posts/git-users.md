@@ -148,3 +148,4 @@ A word of caution though. If you're used to not having a specific place for the 
 The system has evolved throughout my career and this is the most flexible way I found to configure it. The bad thing is that I don't remember each influence I had along the way. The SSH wrapper is the latest addition. I ideated it alongside Lumo and the following helped me simplify the SSH config with aliases situation:
 
 - [Configure git to use a specific SSH key for a repository permanently.](https://www.rusingh.com/use-a-different-ssh-key-permanently-for-a-specific-git-repo/)
+- [How to match SSH config based on URL path or SSH arguments (for github deploy keys)?](https://stackoverflow.com/questions/60683677/how-to-match-ssh-config-based-on-url-path-or-ssh-arguments-for-github-deploy-ke)
