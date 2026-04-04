@@ -3,7 +3,7 @@ date: 2026-04-01
 title: How to add a key for SSH to GPG Agent?
 ---
 
-The first time I did this, it was difficult. The second time was a little easier. Now, on the third time, I've had enough! It's been so long since the last time that I've forgotten most of the process 😅
+The first time I did this, it was difficult. The second time was a little easier. Now, on the third time, I've had enough! Also, it's been so long since the last time that I've forgotten most of the process 😅
 
 Although I know [I could just search](https://www.youtube.com/watch?v=KlniB27j4Yg) for this information (as I'm doing right now), I'm tired of repeatedly doing it. Since it's a frequent pain point, I'm finally creating my own guide. Why is it frequent for me? I don't know, and that's besides the point 😒
 
