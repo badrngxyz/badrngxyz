@@ -5,7 +5,11 @@ const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} {SITE_AUTHOR}. All rights reserved.
+  <a href="https://badrng.xyz">Bad RNG</a> &copy; {today.getFullYear()}
+  by <a href="https://github.com/badrngxyz">{SITE_AUTHOR}</a>
+  is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+  <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" class="cc">
+  <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" class="cc">
 </footer>
 <style>
   footer {
@@ -13,5 +17,11 @@ const today = new Date();
     background: linear-gradient(var(--gray-gradient)) no-repeat;
     color: rgb(var(--gray));
     text-align: center;
+  }
+
+  .cc {
+    max-width: 1em;
+    max-height:1em;
+    margin-left: .2em;
   }
 </style>
