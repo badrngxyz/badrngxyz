@@ -6,7 +6,7 @@ title: Managing multiple git users
 
 I don't know about you, but I can't have work and personal intertwined. While a contribution graph filled with activity is nice, the constant notifications from work while I'm pursuing hobbies negatively impact my mental well-being. To separate these areas (and a third for this blog), I use separate accounts, but this introduces a lot of friction 🫠
 
-# Configuring different context
+# Configuring different contexts
 
 The first issue is managing emails and usernames. I don't want to manually switch when moving between repositories or configure them individually. That's where the wonderful `[includeIf]` directive comes in handy.
 
@@ -100,13 +100,13 @@ fi
     sshCommand = "~/.local/bin/git-ssh"
 ```
 
-The script doesn't handle SSH itself, it only detects the repository Git is operating on, infers the correct identity file, and then hands it off to your true client. Because Git sends the command it wants the server to execute as `"git-... 'owner/repo.git'"`, we can extract the owner from it and check for a matching identity. Also, we abstracted the manual correlation of an alias to a key, allowing for an empty `~/.ssh/config` file!
+The script doesn't handle SSH itself; it only detects the repository Git is operating on, infers the correct identity file, and then hands it off to your true client. Because Git sends the command it wants the server to execute as `"git-... 'owner/repo.git'"`, we can extract the owner from it and check for a matching identity. Also, we abstracted the manual correlation of an alias to a key, allowing for an empty `~/.ssh/config` file!
 
 Now imagine switching a machine and losing all of that. Let's use Git to save your configuration! [.dotfiles](https://dotfiles.github.io/) for the win 💪 Aaaaand now everyone knows the contexts you're in.
 
 # Keeping it all secret
 
-To separate those configurations even further, we can use `[include]` in `~/.gitconfig` for another layer of indirection. It allows you to store the files separately while having a predefined location for the sensitive configuration, no need to redo the whole setup 🙌
+To separate those configurations even further, we can use `[include]` in `~/.gitconfig` for another layer of indirection. It allows you to store the files separately while having a predefined location for the sensitive configuration; no need to redo the whole setup 🙌
 
 ```
 # ~/.gitconfig
