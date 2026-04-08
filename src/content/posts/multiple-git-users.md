@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2026-04-08
 title: Managing multiple git users
 ---
