@@ -10,7 +10,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 const today = new Date();
 
 const posts = (await getCollection("posts"))
-  .filter(p => p.data.date < today)
+  .filter((p) => !!p.data.date)
+  .filter((p) => p.data.date < today)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 

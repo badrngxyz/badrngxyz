@@ -2,6 +2,7 @@
 title: Solving Sudoku in Elixir
 date: 2099-12-31
 ---
+
 # Solving Sudoku in Elixir
 
 Even though I like playing logical games for the mind tickling, sometimes I just want to unwind and would love a little help without paying for tips. Combine logic with an algorithm, and you get a nice challenge that leads to your dirty cheat. Also, since you worked out how to solve it algorithmically, do you even call it a cheat?
@@ -53,10 +54,10 @@ defmodule Sudoku.Cell do
 
   def settle(%__MODULE__{} = board, value) do
     impacts = Enum.map(board.impacts, &discard(&1, value))
-    
+
     %{board | value: value, impacts: impacts}
   end
-  
+
   defp discard(%__MODULE__{} = board, value) do
     options = List.delete(board.options, value)
     %{board | options: options}
@@ -76,7 +77,7 @@ Even though Elixir is immutable, it inherits the BEAM VM and we can model mutabl
 defmodule Sudoku.Cell do
   defstruct options: Enum.to_list(1..9), impacts: []
 
-  use GenServer 
+  use GenServer
 
   def settle(pid, value) do
     GenServer.call(pid, {:settle, value})
@@ -122,7 +123,7 @@ defmodule Sudoku.Cell do
 end
 ```
 
-You'll notice that the process doesn't impact anyone at the start. That's because it leads to a chicken and the egg if we set it as a pre-requisite for a cell's existence. Instead, we need to create the whole board and correlate each cell from the outside, we need a *leader* - the `Sudoku.Board` module.
+You'll notice that the process doesn't impact anyone at the start. That's because it leads to a chicken and the egg if we set it as a pre-requisite for a cell's existence. Instead, we need to create the whole board and correlate each cell from the outside, we need a _leader_ - the `Sudoku.Board` module.
 
 ```elixir
 defmodule Sudoku.Board do
@@ -255,7 +256,7 @@ defmodule Sudoku.Board do
     receive do
       {:DOWN, _, :process, _, {:normal, value}} -> solve(board)
     after 0 ->
-      board.cells 
+      board.cells
       |> Enum.filter(&Process.alive?/1)
       |> Enum.random()
       |> Sudoku.Cell.nudge()

@@ -13,15 +13,15 @@ That's it, no need to read the rest ✅ I'm no outstanding Elixir developer, and
 Measuring code readability is very nuanced. It depends on different familiarities and preferences. What I'd consider a readable if statement might not be for you because you group conditions differently from me. There's no "right way to read code", we process text information the way works best for each one of us, but I'd argue: the longer the lines, the harder it's is to reason about them.
 
 - Could I draw a comparison with English itself to drive the point home better?
-    - A bunch of really long lines (breaking the container and stretching the whole screen) vs them in smaller form
+  - A bunch of really long lines (breaking the container and stretching the whole screen) vs them in smaller form
 - One liner from my friend with multiple environments in it #break-the-environments
-    - `pnpm --silent workspaces info | bun -p "Object.keys(JSON.parse(require('fs').readFileSync(0,'utf8'))).sort().join('\n')" | uniq > packages.txt`
-    - That first iteraction with Lumo for the awk script on the multiple keys post where awk was doing bash work indirectly
+  - `pnpm --silent workspaces info | bun -p "Object.keys(JSON.parse(require('fs').readFileSync(0,'utf8'))).sort().join('\n')" | uniq > packages.txt`
+  - That first iteraction with Lumo for the awk script on the multiple keys post where awk was doing bash work indirectly
 - Idea from clean code around naming your fragments in a conditional (separating the logic concepts from business concepts) #reduce-the-switches
 - Reading haskell with its grouping rules (even a small line has many concepts) #make-it-linear
-    - Linear code is better - there's a post about this that I highlighted in the past 🥳
-    - Infix operators vs normal function chaining with pipelines (if possible)
-        - Code that looks beautiful isn't necessarily more readable. The point is not being smart or beautiful, but communicating intent!
-    - Free point (free dot, whatever that method of omitting parameters because the composition expects them) is really better?
+  - Linear code is better - there's a post about this that I highlighted in the past 🥳
+  - Infix operators vs normal function chaining with pipelines (if possible)
+    - Code that looks beautiful isn't necessarily more readable. The point is not being smart or beautiful, but communicating intent!
+  - Free point (free dot, whatever that method of omitting parameters because the composition expects them) is really better?
 - Method chaining in multiple lines vs split by each call/purpose #break-the-lines
 - Is there any study I can refer too? Could I ask for that in the end? It'd be an explicit ask for feedback 🤘

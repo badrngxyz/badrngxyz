@@ -37,4 +37,3 @@ That's the beauty of xyz: letters often representing variables we can adjust. I 
 It will be a combination of everything: no starting point but a void, navigating as best I can, heading in the direction that feels right, slowly contributing to overall progress.
 
 The best way I can hope to achieve any of this is by showing up and being ready for challenges. There will be mistakes, but I can only move forward with feedback, so I'm throwing the doors wide open with this. Just don't expect too much. 🫥
-
