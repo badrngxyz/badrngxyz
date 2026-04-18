@@ -1,14 +1,14 @@
 ---
-date: 2026-04-15
+date: 2026-04-18
 title: Sending suggestions outside GitHub
-description: The ancient ways are still useful
+subtitle: The ancient ways are still useful
 ---
 
-There are many reasons one might want to send suggestions outside of GitHub. Be it because your suggestion is too big, maybe a whole overhaul of the project, or you simply don't want to commit another person's branch. Git started without GitHub, and it's built on top of sending changes around, so why bounding ourselves to a mere UI when we can whip out the mighty CLI 💪🧨
+There are many reasons why one might want to send suggestions outside of GitHub. Perhaps your suggestion is too extensive, such as a completely different approach for one portion, or you simply don't want to commit to someone else's branch. Git started without GitHub, and it's built on the concept of sending changes around, so why limit ourselves to a mere UI when we can unleash the mighty CLI?
 
 # Extracting the changes
 
-Suggestions are basically a diff, but you gotta present them for another person to analyze. Before your coworker can see you changes, you gotta first make them somewhere to extract them later. The beauty of working with diffs directly is you can use your local toolchain. Let's say your buddy wants a review on `awesome-feature`:
+Suggestions are essentially a diff, but you need to present them in a way another person can analyze. Before your coworker can't see your changes yet, you first have to create them somewhere so you can extract them later. The beauty of working with diffs directly is that you can use your local toolchain. Let's say your buddy wants a review on `awesome-feature`:
 
 ```sh
 git switch main
@@ -19,28 +19,28 @@ git switch -c awesome-suggestions
 git commit "suggestions from your pal"
 ```
 
-We create a separate branch just to make things easier if they move in the meantime. Now we have to package that patch and send it over the wire. Git works based on patches, so it's natural there's already a command for it 🎉
+We create a separate branch just to make things easier in case the original branch moves in the meantime. Now we have to package that patch and send it over the wire. Git works based on patches, so naturally, there's already a command for it 🎉
 
 ```sh
 git format-patch awesome-feature..awesome-suggestions --stdout > suggestions.patch
 ```
 
-Now it's just a matter of sending that file over to your coworker however you prefer.
+You can send that file to your coworker however you prefer and let them decide what's worth including in their feature.
 
 # Applying the changes
 
-If there's a command for formatting patches, there has to be one for applying patches. That's where `git apply` comes in. With the patch file in hand, it's as simple as:
+If there's a command for formatting patches, there must be one for applying them. That's where `git apply` comes in. With the patch file in hand, it's as simple as:
 
 ```
-git apply suggestions.patch --check && git apply --sugestions.patch --index
+git apply suggestions.patch --check && git apply suggestions.patch --index
 ```
 
-By running a check before applying it you prevent any nasty scenario where the patch doesn't fit your repository. Another key parameter when applying is `--index` for it to not become a commit straight away. By having it in your index, it's possible to test it and accept hunks with `git add -p`. However, I recommend using your IDE at this point because editing hunk by hand isn't trivial 😅
+By running a check before applying it, you prevent any nasty scenario where the patch doesn't fit your repository. Another key parameter when applying is `--index`, which prevents it from becoming a commit straight away. By having it in your index, you can test them and accept hunks with `git add -p`. However, I recommend using your IDE at this point because editing hunks by hand isn't trivial 😅
 
 # Why would I use it?
 
-The flow isn't as pretty as sending a comment over a PR and letting the owner accept it, but it might help in a few scenarios:
+The workflow isn't as elegant as sending a comment on a PR and letting the owner accept it, but it might be helpful in a few scenarios:
 
-- Cascading changes: prevent multiple changes for the same subject from getting folded and ignored 🙃
-- Sending diffs without author: when you don't care about authorship and would let the other get credits over those small changes
-- Porting commits between repositories: setting multiple remotes for a couple commits isn't always the smoothest path
+- Cascading changes: make it easier for the author to accept multiple changes for a single subject
+- Sending diffs without author: when you don't care about authorship and would let the other get credit for those small changes
+- Porting commits between repositories: setting multiple remotes for a couple of commits isn't always the smoothest path

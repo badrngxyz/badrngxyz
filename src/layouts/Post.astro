@@ -8,7 +8,7 @@ import Header from "../components/Header.astro";
 
 type Props = CollectionEntry<"posts">["data"];
 
-const { title, description, date, image } = Astro.props;
+const { title, subtitle, description, date, image } = Astro.props;
 ---
 
 <html lang="en">
@@ -72,7 +72,7 @@ const { title, description, date, image } = Astro.props;
               <Day date={date} />
             </div>
             <h1>{title}</h1>
-            <blockquote><p>{description}</p></blockquote>
+            <blockquote><p>{subtitle}</p></blockquote>
             <hr />
           </div>
           <slot />

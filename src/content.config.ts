@@ -4,10 +4,10 @@ import { z } from "astro/zod";
 
 const page = () =>
   z.object({
-    draft: z.boolean().default(false),
-    date: z.coerce.date(),
     title: z.string(),
+    subtitle: z.string().optional(),
     description: z.string().optional(),
+    date: z.coerce.date().optional(),
   });
 
 const posts = defineCollection({
