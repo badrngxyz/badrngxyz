@@ -1,0 +1,19 @@
+name: Deploy to Cloudflare
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup and Install
+        uses: ./.github/actions/setup
+
+      - name: Deploy
+        run: pnpm deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${% raw %}{{ secrets.CLOUDFLARE_API_TOKEN }}{% endraw %}
