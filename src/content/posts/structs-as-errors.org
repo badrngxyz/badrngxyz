@@ -1,0 +1,13 @@
+#+TITLE: Use structs for errors
+
+* Atoms and tagged tuples are cool, until they aren't
+- Where did that atom come from?
+- Stacktraces are so much better
+* Exceptions? Are you really doing Elixir?
+- Rescue and raise aren't as nice as ~with~
+- Throws are for control flow, not for exception handling
+- Exceptions are for exceptional things. What are your invariants?
+* What about mixing both?
+- Rust approach with each module having their own errors
+- Maybe mention [[https://github.com/expede/exceptional][Exceptional]] to show that exception is just a behaviour
+- Include metadata in your error structs to reduce the different size problem

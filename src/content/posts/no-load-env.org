@@ -1,0 +1,7 @@
+#+title: No Load Env
+
+- It's called environment for a reason, why are you building application code to load dynamically alter it during runtime? Packages such as .dotenv help development a lot, lets not pretend it doesn't, but they also introduce "unnecessary" code
+- Prefer using tools that setup your environment variables in the environment itself. Where do you spawn your applications from? Probably your shell, so look into direnv, mise, nix, ... or anything that loads an environment file
+- As with the dotenv packages, those tools are also OS agnostic most of the time, and they'll also ensure you'll have the correct environment whenever you run the command from your application directory. That's much better than introducing steps to your application startup to load an external file
+- It's easy to build profiles and switch them with direnv. You can build logic in them and chain variables in a way that loads the correct environment depending on what you want.
+- One downside is that it doesn't work with variables you "inject" right before running a command, such as ~MIX_ENV=test iex -S mix~. Unfortunately, you'll need logic in the application to switch variables in this case.

@@ -1,0 +1,12 @@
+#+title: Selecting Timezone
+
+* What timezone should you use? User's or UTC?
+* Should we only show or also filter using a user timezone?
+* Is it the job of frontend or backend to care about timezones?
+** If it's the frontend, what about queries such as "last 7 days"?
+- If the backend starts at current UTC and do a minus 7, then it's the same timespan for both
+- What happens if it goes back to the start of the current day? Then it's not the same 7 days anymore
+
+* Scratchpad
+
+- You can use a ~AT TIME ZONE~ in Postgres to convert it when querying. Ecto fragment: ~fragment("? AT TIME ZONE ?", todo.inserted_at, ^timezone)~

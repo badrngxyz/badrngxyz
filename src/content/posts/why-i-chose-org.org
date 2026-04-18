@@ -1,0 +1,6 @@
+#+title: Why I Chose Org
+
+- Properties drawer to include additional information and connect stuff
+- Despite it not having a true specification, it at least has a central place to evolve the format. Markdown has flavors and that's fragmentation in the format, so you don't know who supports what; Slack didn't support simple links for the longest time ever
+- Org's penetration in our daily tools is far inferior to what Markdown has achieved, and that makes me want to switch more often than I'd like to admit
+- Org implementation in other tools isn't close to what Emacs has, and the fact that the "specification" is Emacs implementation, then it's almost impossible to expect others to catch-up. Though I dislike using Emacs for development because it's too slow for me, it has become my writing tool

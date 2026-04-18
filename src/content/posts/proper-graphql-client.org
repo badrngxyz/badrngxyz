@@ -1,0 +1,43 @@
+#+title: Proper GraphQL Client
+
+* How it comes that building a great graphql schema is composable in the backend while we're still stuck with strings in the frontend?
+* Passing arguments down to every connection in a complex object sucks! It'd be nice if variables from one could be composed as we add child objects. For example:
+
+#+BEGIN_SRC
+lines.take(line_fields).args(lines_expected_args)
+fulfillments.take(fulfillment_fields).args(fulfillments_expected_args)
+order.take(order_fields).include(fulfillments).args(order_expected_args)
+
+query.name("getOrders").print(order)
+
+query getOrders(fulfillment: {lines: lines_expected_args, ...fulfillment_expected_args}, ...order_expected_args) {
+  order(...order_expected_args) {
+      ...order_fields
+      fulfillments(...fulfillment_args) {
+      ...fulfillment_fields
+      lines(...lines_args) {
+          ...lines_fields
+      }
+    }
+  }
+}
+#+END_SRC
+
+- The problem here is that queries can't (can?) define custom args when fetching, it has to be defined by the server
+- Even if it was possible to define it, how would you extract the lines arguments from the $fulfillment argument so that you can define them in the lines node?
+
+* It's probably a deficiency in the Elixir environment and others, because the JS world is blooming with good stuff such as Apollo Client
+
+I no longer think Apollo Client is good. It also [[https://www.apollographql.com/docs/react/get-started][defines raw queries using a ~gql~ thingy]] 🤮
+
+* It'd be so cool if it could resolve internal paginations and return the full thing from a single call. Objects that have internal lists would contain the whole list if told so
+
+#+BEGIN_SRC
+fulfillments.exhaustive()
+#+END_SRC
+
+* Programming languages, reuse, and then strings???
+
+- Is there any advantage to the resolver if we use top level variables instead of raw values at the node level?
+- We could interpolate it in while generating the string, and use proper function parameters to have it organized
+- It'd work fine for scalars, but it might become a pain for complex values, how to handle that?

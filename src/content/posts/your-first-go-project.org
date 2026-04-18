@@ -1,0 +1,66 @@
+#+TITLE: Your First Go Project
+
+- [https://go.dev/doc/effective_go][Effective Go] is a good start point
+
+- Historically, Go didn't have modules, but after vX (1.14?) they started to have modules. They concentrate all their dependencies and go versions, along with their internal subdependences.
+- Franz-go is a good example with plugins for each additional functionalitty for optional stuff
+
+- ~go mod init <name>~ to create your package. Remember to follow the ~repo.url/name~ convention
+
+- Start coding motherfucker!
+
+- Install the dependencies you need by running ~go get repo.url/...~. It starts as indirect while you don't use that dependency in your own code.
+  - Your fist ~go get~ will create Go's version of a lock file - the ~go.sum~ file
+- If you ever happen to remove a dependency, you can remove/clean those up by running ~go mod tidy~
+- ~go mod tidy~ doesn't necessarily remove dependencies from your project, but tidies the ~go.mod~ file according to your project. Therefore, if you have a dependency that was ~// indirect~ and you started using, it'll remove the comment
+  - Trivia: if you import a dependency, without running ~go get~, ~go mod tidy~ will do the plumbing for you 🎉
+
+- ~cmd/<cli_name>/main.go~ for all your "binary" entrypoint. The ~cli_name~ will be the name that you'll use when calling it after telling your users to run ~go install~
+  - ~package~ directives follow the folder name, but your entrypoints are called ~main~. Inside those entrypoints, it must have a ~main~ function to start your stuff
+
+- Learn to work with ~context~ because all your dependencies take advantage of it. If you cancel the context, they'll probably start tearing down stuff
+
+* TODO Where do the project structure conventions come from?
+
+- There's [https://github.com/golang-standards/project-layout][Project Layout] but the ~pkg~ name is already outdated
+
+- The folder structure contains the things that provide what's in their name. Stuff under ~api/~ isn't the ~api~ itself, but what the ~api~ needs
+- You don't need to use the file name when importing stuff, the scope for that folder is global
+- The folder is a full scope on itself, so each file in there affects/includes things on that scope. There's no file level scope, it's all the folder scope
+
+* To keep your project in check
+
+- golangci-lint.run
+  - behind the scenes it runs other lints such as Grafana's Revive
+
+* Run your project
+
+- ~go run ~cmd/<cli_name>/main.go~ will run your main function directly by compiling stuff beind the scenes
+  - If you want to run the binary itself, you must build it first! Do it with ~go build -o <cli_name> cmd/<cli_name/main.go~, and then run it as a normal binary
+- the first time compiling will take longer because it has to compile your dependencies. The second time will be faster because of a build cache and it'll only recompile your own project
+
+* Passing options to your commands
+
+- ~type Opt func(*Cfg)~ to serve as an abstraction for each option you want the user to have. That helps with things like ~WithName(name string)~
+
+  #+BEGIN_SRC go
+opts := []Opt{}
+
+names := []string {"a", "b", "c", "d"}
+subnames := names[1:3]
+subnames[0] = "z"
+  #+END_SRC
+
+* TODO contribute to fang: change ~context.TODO()~ to ~context.Background()~
+
+
+* For other projects
+
+- There's no Ecto in this shit 🥲, you'll be raw dogging SQL code
+- We don't use ORMs because it's even harder than doing it by hand
+- pgx for running queries on postgressqlc to generate -
+- you write your DDL in normal sql, pass it to sqlc, which will generate the code to run with migrate, and automatically generate go code for you DB entities
+  - sqlc can also ingest a "queries" file that build the go code for you
+  - you'll be commiting the code generate, don't overcomplicate your build
+- There's also ~squirrel~ that's a little more programattic, you won't be writing SQL directly and generating code for those queries
+- flipt is a good project, big enough, to look at and maybe understand why they don't use GORM

@@ -1,0 +1,7 @@
+#+title: Commit Broken Tests
+
+- The ~has_good_tests~ is good to see if tests break when you introduce new code, so if you remove the code those tests will break.
+- We also need the opposite of it: ~has_good_code~ to check if by removing the tests it breaks previous tests. That's kind of problematic and can't be done by default because not all code needs to be retro compatible, but most code must be tested.
+- What about cases where there wasn't a test and then you added one to fix a bug you found and was untested? If you remove the code, the new tests will also break, but how can I for certain tell that I didn't break previous behaviour with that code I introduced?
+- One should first ensure coverage of affected code, and then fix bugs found in that, but doing both in the same PR causes uncertainty.
+- There could be a tag ~@bug_tracking~ for the tests that we know should break because they assert the existence of a bug, and then once the fix comes around we remove that tag.
