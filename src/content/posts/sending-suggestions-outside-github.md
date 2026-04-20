@@ -8,7 +8,7 @@ There are many reasons why one might want to send suggestions outside of GitHub.
 
 # Extracting the changes
 
-Suggestions are essentially a diff, but you need to present them in a way another person can analyze. Before your coworker can't see your changes yet, you first have to create them somewhere so you can extract them later. The beauty of working with diffs directly is that you can use your local toolchain. Let's say your buddy wants a review on `awesome-feature`:
+Suggestions are essentially a diff, but you need to present them in a way another person can analyze. Before your coworker can see your changes, you first need to make them. The beauty of working with diffs directly is that you can use your local toolchain. Let's say your buddy wants a review on `awesome-feature`:
 
 ```sh
 git switch main
@@ -43,4 +43,5 @@ The workflow isn't as elegant as sending a comment on a PR and letting the owner
 
 - Cascading changes: make it easier for the author to accept multiple changes for a single subject
 - Sending diffs without author: when you don't care about authorship and would let the other get credit for those small changes
+- Preventing the forge to block your contributions: connected to before, sometimes the forge blocks you from approving just because you committed a single line, contributing outside of the forge skips that (GitLab 👀)
 - Porting commits between repositories: setting multiple remotes for a couple of commits isn't always the smoothest path
